@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product 1 - Product Store</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg'); /* Set your background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Header */
+        .header {
+            background-color: #767676;
+            padding: 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .header img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .header img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Product Page Content */
+        .product-page {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background-image: url('product-background.jpg'); /* Set the product page background */
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-title {
+            font-size: 32px;
+            color: #fff;
+        }
+
+        .product-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        /* Colored Background for Product Description */
+        .product-description {
+            font-size: 18px;
+            color: #fff;
+            margin-top: 10px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #47a3ff; /* Blue color for contrast */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-price {
+            font-size: 26px;
+            font-weight: bold;
+            color: #28a745;
+            margin-top: 15px;
+        }
+
+        .buy-btn {
+            padding: 15px 25px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .buy-btn:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .header img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .product-title {
+                font-size: 28px;
+            }
+
+            .product-description {
+                font-size: 16px;
+            }
+
+            .product-price {
+                font-size: 22px;
+            }
+
+            .product-image {
+                max-width: 100%;
+            }
+
+            .buy-btn {
+                font-size: 16px;
+                padding: 12px 22px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-page {
+                padding: 15px;
+            }
+
+            .product-title {
+                font-size: 24px;
+            }
+
+            .product-description {
+                font-size: 14px;
+                margin: 10px auto;
+            }
+
+            .product-price {
+                font-size: 20px;
+            }
+
+            .buy-btn {
+                font-size: 14px;
+                padding: 10px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <img src="logo.png" alt="Store Logo">
+    </div>
+
+    <!-- Product Page Content -->
+    <div class="product-page">
+        <h1 class="product-title">Product 1</h1>
+        <img src="product2.jpg" alt="Product 1" class="product-image">
+
+        <!-- Colored Background for Product Description -->
+        <div class="product-description">
+            <p>This is a detailed description of Product 1. It has many features, such as high quality, durability, and an attractive design. It is the perfect choice for those who seek excellent performance and value for money.</p>
+        </div>
+
+        <p class="product-price">$10</p>
+
+        <!-- Buy Now Button -->
+        <a href="https://www.paymentgateway.com/pay?product=1&amount=10" class="buy-btn" target="_blank">Buy Now</a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Product Store. All rights reserved.</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></p>
+    </div>
+
+</body>
+</html>
